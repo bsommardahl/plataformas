@@ -1,0 +1,50 @@
+body{
+	font-family: ' Jura', sans-serif;
+	color:#f7f7f7;
+}
+h1{
+	font-family: 'Black Ops One', cursive;
+	font-size: 3em;
+	font-weight: bolder;
+	color:#fff;
+}
+
+.screen{
+    display:none;
+	text-align: center;
+	width: 960px;
+	background-image:url(imgs/fondo.jpg);
+	background-size: 100% 100%;
+}
+.p{
+	height: 350px;
+	display: inline-block;
+}
+.datos{
+	display: inline-block;
+	width: 600px;
+	text-align: center;
+	vertical-align: top;
+}
+p img{
+	height: 110px;
+	width: 100px;
+}
+img{
+	vertical-align: middle;
+}
+.btn{
+	font-family: 'Jura', sans-serif;
+	font-size: 1.5em;
+	padding: 1em 3em;
+	background-color: #f7f7f7;
+	background-color: #000028;
+	color: #f7f7f7;
+	border: none;
+	-webkit-transition:all 0. 4s;
+}
+.btn:hover{
+	background-color: #f7f7f7;
+	color: #222;
+	cursor:pointer;
+}

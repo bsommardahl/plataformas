@@ -1,11 +1,11 @@
-function Enemigo(x,y){
-    Kinetic.Rect.call(this);
+function Enemigo(x,y,imagen){
+    Kinetic.Image.call(this);
     this.setWidth(60);
     this.setHeight(60);
     this.setX(x);
     this.setY(y);
-    this.contador = 0;
-    this.setFill('blue');
+    this.contador=0;
+    this.setImage(imagen);
     this.aleatorio = function(inferior,superior){
           var poisibilidades = superior- inferior;
           var random = Math.random()* poisibilidades;
@@ -13,7 +13,9 @@ function Enemigo(x,y){
           return parseInt(inferior) + random;
     }
     this.mover = function(){
-   }  
+      this.contador++;
+      this.setX(this.getX()+ Math.sin(this.contador * Math.PI /50)*5);
+   } 
 }
 
-Enemigo.prototype = Object.create(Kinetic.Rect.prototype);
+Enemigo.prototype = Object.create(Kinetic.Image.prototype);
